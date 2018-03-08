@@ -105,7 +105,6 @@ public class MainController implements IMainController, ISocketObserver, IWeight
 			break;
 		case P111:
 			weightController.showMessageTernaryDisplay(message.getMessage());
-			weightController.setSoftButtonTexts(new String[]{"", "Erase", "<--", "-->", "OK", "Cancel"});
 			socketHandler.sendMessage(new SocketOutMessage("P111 A"));
 			break;
 		case RM204:
