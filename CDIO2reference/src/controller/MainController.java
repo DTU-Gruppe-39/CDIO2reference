@@ -118,7 +118,7 @@ public class MainController implements IMainController, ISocketObserver, IWeight
 			unit = handleUnit(unit);
 			weightController.showMessageSecondaryDisplay(placeholder+" "+unit);
 			weightState=WeightState.RM20;
-			weightController.setSoftButtonTexts(new String[]{"", "Erase", "<--", "-->", "OK", "Cancel"});;
+			weightController.setSoftButtonTexts(new String[]{"", "Erase", "<--", "-->", "OK", "Cancel"});
 			socketHandler.sendMessage(new SocketOutMessage("RM20 B"));
 			break;
 		case K:
